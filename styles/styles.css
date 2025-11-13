@@ -3,7 +3,7 @@ body {
 }
 
 main {
-    max-width: auto;
+    max-width: 10000px;
 }
 
 main img {
