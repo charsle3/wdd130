@@ -2,9 +2,16 @@ body {
     text-align: center;
 }
 
+main {
+    max-width: auto;
+}
+
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0 0 20px;
 }
 
 nav {
@@ -51,4 +58,5 @@ img {
 footer {
     margin-top: 10px;
     border-top: 1px dashed grey;
+    text-align: center;
 }
