@@ -1,5 +1,17 @@
+:root {
+    --border: 1px solid black;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    text-align: center;
+    font-size: 16px;
+    font-family: roboto, arial, sans-serif;
 }
 
 main {
@@ -9,9 +21,11 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 10px;
     box-shadow: 0 0 20px;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 nav {
@@ -27,30 +41,38 @@ nav a {
 
 h1 {
     color: darkblue;
+    padding: .5rem;
 }
 
 p {
     padding: 0;
+    margin: 1rem;
 }
 
 aside {
     width: auto;
     margin: 10px; 
-    border: 1px solid black;
+    border: var(--border);
     padding: 10px;
     background-color: lightblue;
     color: black;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+    margin-top: 50px;
+}
+
+aside h2 {
+    position: absolute;
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -59,4 +81,18 @@ footer {
     margin-top: 10px;
     border-top: 1px dashed grey;
     text-align: center;
+}
+
+/* class selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: lightgrey;
+    color: black;
+}
+
+.indent {
+    padding-left: 2rem;
 }
