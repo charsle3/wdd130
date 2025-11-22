@@ -46,6 +46,7 @@ nav, p, section, article {
 
 article section {
     position: absolute;
+    color: var(--secondary-color);
 }
 
 /* Class declarations */
@@ -59,7 +60,7 @@ article section {
 }
 
 .hero article {
-    
+    position: absolute;
 }
 
 .hero img{
