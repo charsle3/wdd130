@@ -1,8 +1,8 @@
 :root {
     --primary-color: #055a05;
-    --secondary-color: #f4a261;
+    --secondary-color: #9D4D0B;
     --accent1-color: #264653;
-    --accent2-color: darkgray;
+    --accent2-color: #707070;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -24,7 +24,7 @@ header, main, footer {
 }
 
 header, footer {
-    background-color: lightgray;
+    background-color: #FCFCFC;
     border: 1px solid black;
     align-items: center;
 }
