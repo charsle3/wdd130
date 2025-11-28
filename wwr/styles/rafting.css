@@ -29,8 +29,17 @@ header, footer {
     align-items: center;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 170px 1fr 400px 1fr;
+}
+
 header img {
-    float: left;
+    grid-column: 2;
+}
+
+header nav {
+    grid-column: 3 span 2;
 }
 
 footer {
