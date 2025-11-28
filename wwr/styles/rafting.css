@@ -23,9 +23,32 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header, footer {
+    background-color: lightgray;
+    border: 1px solid black;
+    align-items: center;
+}
+
+header img {
+    float: left;
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+}
+
+footer nav a {
+    padding: 10px;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
 }
 
 h1 {
@@ -33,20 +56,27 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: white;
 }
 
 nav, p, section, article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     margin: 16px;
     padding: 8px;
 }
 
-article section {
-    position: absolute;
+article, section {
+    position: relative;
     color: var(--secondary-color);
+}
+
+figure img {
+    width: 125px;
+    height: auto;
 }
 
 /* Class declarations */
@@ -61,9 +91,12 @@ article section {
 
 .hero article {
     position: absolute;
+    top: 200px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.632);
 }
 
-.hero img{
+.hero img {
     display: block;
     width: 100%;  
     height: auto;
@@ -72,4 +105,28 @@ article section {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gallery h2 {
+    grid-column: 1 / 6;
+    justify-content: center;
+}
+
+.gallery figure {
+    padding: 10px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.history h2 {
+    grid-column: 1 / 6;
+    justify-content: center;
 }
