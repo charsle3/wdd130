@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact page for a fictional white water rafting company called SplashDown">
+    <meta name="author" content="James Pendleton Kingsley">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/z-boat.png" alt="a logo of a cartoonish inflatable raft" width="100">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact">
+            <h1 class="contact">SplashDown</h1>
+            <p>678 Fictional Place</p>
+            <p>Moab Utah</p>
+            <p>+1 111 222 4242</p>
+            <p>nonexistant@SplashDown.com</p>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1311.487239260343!2d-109.55468019496571!3d38.573862111829875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a9f715466ac693b%3A0x5e52b5e1c31a11cc!2sMoab%20Canoe!5e0!3m2!1sen!2sus!4v1764648390681!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form class="information">
+                <div class="form-item">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="First, Last">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="xyz@domain.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="purpose1" class="purpose">Message Purpose</label>
+                    <div class="form-item radio">
+                        <input type="radio" name="purpose" id="purpose1">
+                        <label for="purpose1">General Ingquiry</label>
+                        <input type="radio" name="purpose" id="purpose2">
+                        <label for="purpose2">Reservation Question</label>
+                        <input type="radio" name="purpose" id="purpose3">
+                        <label for="purpose3">Website Suggestion</label>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                </div>
+
+                <div class="form-item">
+                    <textarea name="message" id="message">Type here</textarea>
+                </div>
+
+                <div class="form-item checkbox">
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <label for="subscribe"> Please Subscribe me to the monthly newsletter</label>
+                </div>
+
+                <div class="form-item submit">
+                    <button type="submit">Get in Touch!</button>
+                </div>
+            </form>
+        </div>
+        <section class="Serve">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/john-smith.jpg" alt="A headshot of a fictional employee named John Smith">
+                <figcaption>John Smith -- Sales Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/penny-dreadful.jpg" alt="A headshot of a fictional employee named Penny Dreadful">
+                <figcaption>Penny Dreadful -- Safety Lead</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wendy-burgers.jpg" alt="A headshot of a fictional employee named Wendy Burgers.">
+                <figcaption>Wendy Burgers -- CFO</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SplashDown James Kingsley</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook logo" width="50"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram logo" width="50"></a>
+            <a href="https://youtube.com"><img src="images/youtube.svg" alt="Youtube logo" width="50"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
