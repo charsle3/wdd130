@@ -145,6 +145,7 @@ figure img {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: lightgray;
     border: 1px solid black;
+    color: black;
 }
 
 .Serve h2 {
