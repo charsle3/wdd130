@@ -16,11 +16,13 @@
 body {
     font-family: var(--body-font);
     color: var(--accent2-color);
+    background-color: rgba(255, 0, 0, 0.100);
+
 }
 
 header, main, footer {
     width: 840px;
-    margin: 0 auto;
+    margin: 5px auto;
 }
 
 header, footer {
@@ -57,10 +59,10 @@ h1, h2 {
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding: 25px 0;
 }
 
-h1 {
+.hero h1, .hero1 h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -88,6 +90,24 @@ figure img {
     height: auto;
 }
 
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+td, th {
+    border: 1px solid black;
+    color: black;
+    padding: 2px;
+}
+
+.a {
+    background-color: rgba(128, 128, 128, 0.332);
+}
+
 /* Class declarations */
 
 .socialmedia a {
@@ -112,6 +132,28 @@ figure img {
 }
 
 .hero article img {
+    float: right;
+    width: 125px;
+}
+
+.hero1 {
+    position: relative;
+}
+
+.hero1 article {
+    position: absolute;
+    top: 280px;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.632);
+}
+
+.hero1 img {
+    display: block;
+    width: 100%;  
+    height: auto;
+}
+
+.hero1 article img {
     float: right;
     width: 125px;
 }
@@ -146,6 +188,7 @@ figure img {
     background-color: lightgray;
     border: 1px solid black;
     color: black;
+    margin: 30px 0;
 }
 
 .Serve h2 {
@@ -163,10 +206,8 @@ figure img {
 }
 
 .contact {
-    position: relative;
-    background-color: rgba(255, 255, 255, .5%);
     color: black;
-    opacity: 1;
+    margin: 30px 0;
 }
 
 .contact p {
@@ -185,6 +226,11 @@ figure img {
     margin: 10px;
 }
 
+.contact, .map {
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.332);
+}
+
 .information {
     display: block;
 }
@@ -200,7 +246,7 @@ figure img {
 }
 
 .form-item textarea {
-    width: 515px;
+    width: 493px;
     height: 60px;
 }
 
@@ -221,3 +267,97 @@ figure img {
 .submit {
     grid-template-columns: 1fr;;
 }
+
+.middle {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.middle article {
+    margin: 20px 10px 20px 0;
+    padding: 0;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.632);
+
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-around;
+    border: 1px solid black;
+    margin: 20px 0 20px 10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.632);
+    color: var(--secondary-color);
+}
+
+.jealousy {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.jealousy figure {
+    margin: 20px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin: 10px 0 30px;
+    background-color: rgba(128, 128, 128, 0.632);
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.bottom h2 {
+    grid-column: 1 / 5;
+    margin-top: 20px;
+}
+
+.bottom figure {
+    margin-bottom: 20px;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 100px 300px;
+    margin-left: 5px;
+}
+
+.discount {
+    display: block;
+    margin: 30px 0;
+    padding: 30px;
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.632);
+    color: black;
+    text-align: center;
+}
+
+.selections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0px;
+}
+
+.selections article {
+    border: 1px solid black;
+    background-color: rgba(128, 128, 128, 0.632);
+    margin: 30px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.selections article img {
+    width: 200px;
+    height: auto;
+}
+
+/* .details {
+    border: 1px solid black;
+} */
